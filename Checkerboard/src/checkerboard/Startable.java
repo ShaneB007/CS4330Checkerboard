@@ -16,6 +16,8 @@ import javafx.stage.Stage;
  *
  * @author bisho
  */
+
+
 public class Startable extends Application {
      @Override
     public void start(Stage stage) throws Exception {
@@ -33,6 +35,8 @@ public class Startable extends Application {
     /**
      * @param args the command line arguments
      */
+    
+    
     public static void main(String[] args) {
         launch(args);
     }

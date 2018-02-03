@@ -13,6 +13,8 @@ import javafx.scene.shape.Rectangle;
  *
  * @author bisho
  */
+
+
 public class Checkerboard {
     
     private int numRows;
@@ -41,13 +43,15 @@ public class Checkerboard {
         rectHeight = anchorHeight/numRows;
     }
     
+    
     public Checkerboard(int numRows, int numCols, double anchorWidth, double anchorHeight, Color lightColor, Color darkColor) {
         this(numRows, numCols, anchorWidth, anchorHeight);
         this.color1 = lightColor;
         this.color2 = darkColor;
     }
     
-    /* Builds board UI and returns AnchorPane as root object */
+
+    
     public void build() {
         anchorPane = new AnchorPane();
         
@@ -80,7 +84,8 @@ public class Checkerboard {
         }
     }
     
-    /* Returns the AnchorPane made by build() or null if one hasn't been built yet */
+
+    
     public AnchorPane getBoard() {
         if(anchorPane == null) {
             return null;
